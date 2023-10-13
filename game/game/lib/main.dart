@@ -1,3 +1,4 @@
+import 'package:game/shared/enemy/goblin_controller.dart';
 import 'package:game/shared/interface/bar_life_controller.dart';
 import 'package:game/shared/npc/critter/critter_controller.dart';
 import 'package:game/shared/player/knight_controller.dart';
@@ -14,6 +15,7 @@ void main() async {
   }
 
   BonfireInjector().putFactory((i) => KnightController());
+  BonfireInjector().putFactory((i) => GoblinController());
   BonfireInjector().putFactory((i) => CritterController());
   BonfireInjector().put((i) => BarLifeController());
 
