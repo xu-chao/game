@@ -40,11 +40,11 @@ class Menu extends StatelessWidget {
             Center(
               child: RichText(
                 text: const TextSpan(
-                  text: 'Bonfire',
+                  text: '红燕',
                   style: TextStyle(fontSize: 30, color: Colors.white),
                   children: [
                     TextSpan(
-                      text: '  v2.11.5',
+                      text: '  hot.2.11.5',
                       style: TextStyle(fontSize: 15, color: Colors.white),
                     )
                   ],
@@ -62,7 +62,7 @@ class Menu extends StatelessWidget {
                   const SizedBox(
                     height: 10,
                   ),
-                  _buildButton(context, 'Tiled Map', () {
+                  _buildButton(context, '进入游戏', () {
                     _navTo(context, const GameTiledMap());
                   }),
                 ],
@@ -75,7 +75,7 @@ class Menu extends StatelessWidget {
         height: 40,
         child: Center(
           child: Text(
-            'Keyboard: directional and Space Bar to attack',
+            '键盘：定向和空格键攻击',
             style: TextStyle(fontSize: 18),
           ),
         ),
