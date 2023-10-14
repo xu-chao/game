@@ -171,14 +171,14 @@ class Knight extends SimplePlayer
             Say(
               text: [
                 const TextSpan(
-                  text: 'Look at this! It seems that',
+                  text: '看看这个！看起来',
                 ),
                 const TextSpan(
-                  text: ' I\'m not alone ',
+                  text: ' 我并不孤单 ',
                   style: TextStyle(color: Colors.red),
                 ),
                 const TextSpan(
-                  text: 'here...',
+                  text: '这里...',
                 ),
               ],
               person: SizedBox(
@@ -190,17 +190,17 @@ class Knight extends SimplePlayer
             Say(
               text: [
                 const TextSpan(
-                  text: 'Lok Tar Ogr!',
+                  text: '快醒醒！',
                 ),
                 const TextSpan(
-                  text: ' Lok Tar Ogr! ',
+                  text: '快醒醒！',
                   style: TextStyle(color: Colors.green),
                 ),
                 const TextSpan(
-                  text: ' Lok Tar Ogr! ',
+                  text: '快醒醒！',
                 ),
                 const TextSpan(
-                  text: 'Lok Tar Ogr!',
+                  text: '快醒醒！',
                   style: TextStyle(color: Colors.green),
                 ),
               ],
@@ -214,7 +214,7 @@ class Knight extends SimplePlayer
           ],
           onClose: () {
             // ignore: avoid_print
-            print('close talk');
+            print('关闭对话');
 
             if (!isDead) {
               gameRef.camera.moveToPlayerAnimated(zoom: 1);
@@ -222,7 +222,7 @@ class Knight extends SimplePlayer
           },
           onFinish: () {
             // ignore: avoid_print
-            print('finish talk');
+            print('完成对话');
           },
           logicalKeyboardKeysToNext: [
             LogicalKeyboardKey.space,

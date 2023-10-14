@@ -58,7 +58,7 @@ class KnightInterface extends GameInterface {
       },
     ));
     await add(TextInterfaceComponent(
-      text: 'Start scene',
+      text: '开始场景',
       textConfig: const TextStyle(
         color: Colors.white,
       ),

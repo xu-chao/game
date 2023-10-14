@@ -48,7 +48,7 @@ class Chest extends GameDecoration with TapGesture {
     if (_observedPlayer) {
       _textConfig.render(
         canvas,
-        'Touch me !!',
+        '碰我！！',
         Vector2(x - width / 1.5, center.y - (height + 5)),
       );
     }

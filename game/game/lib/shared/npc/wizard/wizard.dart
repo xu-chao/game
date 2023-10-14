@@ -43,7 +43,7 @@ class Wizard extends SimpleNpc with ObjectCollision, TapGesture {
               text: [
                 const TextSpan(
                   text:
-                      ' Would you tell me, please ...  which way I ought to go from here? ',
+                      '请你告诉我。。。我该从这里往哪走？',
                 )
               ],
               person: SizedBox(
@@ -55,7 +55,7 @@ class Wizard extends SimpleNpc with ObjectCollision, TapGesture {
             Say(
               text: [
                 const TextSpan(
-                  text: 'That depends a good deal on where you want to get to.',
+                  text: '这在很大程度上取决于你想去哪里。',
                 ),
               ],
               person: SizedBox(
@@ -68,7 +68,7 @@ class Wizard extends SimpleNpc with ObjectCollision, TapGesture {
             Say(
               text: [
                 const TextSpan(
-                  text: ' I don\'t much care where. ',
+                  text: '我不太在乎在哪里。',
                 ),
               ],
               person: SizedBox(
@@ -80,7 +80,7 @@ class Wizard extends SimpleNpc with ObjectCollision, TapGesture {
             Say(
               text: [
                 const TextSpan(
-                  text: 'Then it doesn\'t much matter which way you go.',
+                  text: '那么，你走哪条路并不重要。',
                 ),
               ],
               person: SizedBox(
