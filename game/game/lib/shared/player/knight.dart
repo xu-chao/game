@@ -30,7 +30,7 @@ class Knight extends SimplePlayer
           animation: PlayerSpriteSheet.simpleDirectionAnimation,
           size: Vector2.all(DungeonMap.tileSize),
           position: position,
-          life: 200,
+          life: 20000,
           speed: maxSpeed,
         ) {
     setupLighting(

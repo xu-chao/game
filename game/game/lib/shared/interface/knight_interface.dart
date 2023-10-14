@@ -196,13 +196,13 @@ class KnightInterface extends GameInterface {
             borderRadius: BorderRadius.circular(5),
           ),
           padding: const EdgeInsets.all(10),
-          child: ElevatedButton(
-            onPressed: () {
-              // ignore: avoid_print
-              print('Tapped');
-            },
-            child: const Text('Tap here'),
-          ),
+          // child: ElevatedButton(
+          //   onPressed: () {
+          //     // ignore: avoid_print
+          //     print('Tapped');
+          //   },
+          //   child: const Text('Tap here'),
+          // ),
         ),
         align: const Offset(0, -55),
       );
