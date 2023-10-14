@@ -32,43 +32,51 @@ class Menu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.cyan[900],
-      body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            Center(
-              child: RichText(
-                text: const TextSpan(
-                  text: '红燕行动',
-                  style: TextStyle(fontSize: 30, color: Colors.white),
-                  children: [
-                    TextSpan(
-                      text: '  action.1.0.5',
-                      style: TextStyle(fontSize: 15, color: Colors.white),
-                    )
-                  ],
+      // background: backgroundColor: Colors.cyan[900],
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            fit: BoxFit.cover,
+            image: AssetImage("assets/images/tiled/image_bg.jpeg"),
+          ),
+        ),
+        child: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              Center(
+                child: RichText(
+                  text: const TextSpan(
+                    text: '代号:鸿燕行动',
+                    style: TextStyle(fontSize: 30, color: Colors.white,fontFamily: "gameFontFamily" ),
+                    children: [
+                      TextSpan(
+                        text: '  v.1.0.5',
+                        style: TextStyle(fontSize: 15, color: Colors.white),
+                      )
+                    ],
+                  ),
                 ),
               ),
-            ),
-            const SizedBox(
-              height: 40,
-            ),
-            SingleChildScrollView(
-              child: Wrap(
-                runSpacing: 20,
-                spacing: 20,
-                children: [
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  _buildButton(context, '进入游戏', () {
-                    _navTo(context, const GameTiledMap());
-                  }),
-                ],
+              const SizedBox(
+                height: 40,
               ),
-            )
-          ],
+              SingleChildScrollView(
+                child: Wrap(
+                  runSpacing: 20,
+                  spacing: 20,
+                  children: [
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    _buildButton(context, '进入游戏', () {
+                      _navTo(context, const GameTiledMap());
+                    }),
+                  ],
+                ),
+              )
+            ],
+          ),
         ),
       ),
       // bottomNavigationBar: const SizedBox(

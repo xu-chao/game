@@ -47,6 +47,12 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+  fonts:
+    - family: gameFontFamily
+      fonts:
+        - asset: assets/font/font-game.ttf
+          weight: 700
+
   assets:
     - assets/images/
     - assets/images/player/

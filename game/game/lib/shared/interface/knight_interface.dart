@@ -108,7 +108,7 @@ class KnightInterface extends GameInterface {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Text('AwaitCallbackSceneAction test'),
+                  const Text('回调场景操作测试'),
                   const SizedBox(
                     height: 20,
                   ),
@@ -117,7 +117,7 @@ class KnightInterface extends GameInterface {
                       Navigator.pop(context);
                       completed();
                     },
-                    child: const Text('CONTINUE'),
+                    child: const Text('继续'),
                   ),
                   const SizedBox(
                     height: 20,
@@ -127,7 +127,7 @@ class KnightInterface extends GameInterface {
                       Navigator.pop(context);
                       gameRef.stopScene();
                     },
-                    child: const Text('STOP SCENE'),
+                    child: const Text('停止场景'),
                   ),
                 ],
               ),
