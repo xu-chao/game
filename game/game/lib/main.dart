@@ -40,11 +40,11 @@ class Menu extends StatelessWidget {
             Center(
               child: RichText(
                 text: const TextSpan(
-                  text: '红燕',
+                  text: '红燕行动',
                   style: TextStyle(fontSize: 30, color: Colors.white),
                   children: [
                     TextSpan(
-                      text: '  hot.2.11.5',
+                      text: '  action.1.0.5',
                       style: TextStyle(fontSize: 15, color: Colors.white),
                     )
                   ],
@@ -71,15 +71,15 @@ class Menu extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: const SizedBox(
-        height: 40,
-        child: Center(
-          child: Text(
-            '键盘：定向和空格键攻击',
-            style: TextStyle(fontSize: 18),
-          ),
-        ),
-      ),
+      // bottomNavigationBar: const SizedBox(
+      //   height: 40,
+      //   child: Center(
+      //     child: Text(
+      //       '键盘：定向和空格键攻击',
+      //       style: TextStyle(fontSize: 18),
+      //     ),
+      //   ),
+      // ),
     );
   }
 
