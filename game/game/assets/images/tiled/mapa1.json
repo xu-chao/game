@@ -840,23 +840,6 @@
                 }, 
                 {
                  "class":"",
-                 "height":18.84375,
-                 "id":81,
-                 "name":"",
-                 "rotation":0,
-                 "text":
-                    {
-                     "color":"#ffffff",
-                     "text":"Bonfire",
-                     "wrap":true
-                    },
-                 "visible":true,
-                 "width":53.953125,
-                 "x":102.0859375,
-                 "y":4.453125
-                }, 
-                {
-                 "class":"",
                  "height":16,
                  "id":90,
                  "name":"chest",

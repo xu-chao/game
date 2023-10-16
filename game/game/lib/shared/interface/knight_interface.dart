@@ -11,54 +11,54 @@ class KnightInterface extends GameInterface {
   @override
   void onMount() async {
     await add(BarLifeInterface());
+    // await add(InterfaceComponent(
+    //   spriteUnselected: Sprite.load('blue_button1.png'),
+    //   spriteSelected: Sprite.load('blue_button2.png'),
+    //   size: Vector2(40, 40),
+    //   id: 5,
+    //   position: Vector2(150, 20),
+    //   onTapComponent: (selected) {
+    //     final player = gameRef.player;
+    //     if (player != null) {
+    //       (player as Knight).execShowEmote();
+    //     }
+    //   },
+    // ));
+    // await add(InterfaceComponent(
+    //   spriteUnselected: Sprite.load('blue_button1.png'),
+    //   spriteSelected: Sprite.load('blue_button2.png'),
+    //   size: Vector2(40, 40),
+    //   id: 5,
+    //   position: Vector2(200, 20),
+    //   selectable: true,
+    //   onTapComponent: (selected) {
+    //     changeControllerToVisibleEnemy();
+    //   },
+    // ));
+    // await add(InterfaceComponent(
+    //   spriteUnselected: Sprite.load('blue_button1.png'),
+    //   spriteSelected: Sprite.load('blue_button2.png'),
+    //   size: Vector2(40, 40),
+    //   id: 5,
+    //   position: Vector2(250, 20),
+    //   selectable: true,
+    //   onTapComponent: (selected) {
+    //     _addFollowerWidgetExample(selected);
+    //   },
+    // ));
     await add(InterfaceComponent(
       spriteUnselected: Sprite.load('blue_button1.png'),
       spriteSelected: Sprite.load('blue_button2.png'),
       size: Vector2(40, 40),
       id: 5,
       position: Vector2(150, 20),
-      onTapComponent: (selected) {
-        final player = gameRef.player;
-        if (player != null) {
-          (player as Knight).execShowEmote();
-        }
-      },
-    ));
-    await add(InterfaceComponent(
-      spriteUnselected: Sprite.load('blue_button1.png'),
-      spriteSelected: Sprite.load('blue_button2.png'),
-      size: Vector2(40, 40),
-      id: 5,
-      position: Vector2(200, 20),
-      selectable: true,
-      onTapComponent: (selected) {
-        changeControllerToVisibleEnemy();
-      },
-    ));
-    await add(InterfaceComponent(
-      spriteUnselected: Sprite.load('blue_button1.png'),
-      spriteSelected: Sprite.load('blue_button2.png'),
-      size: Vector2(40, 40),
-      id: 5,
-      position: Vector2(250, 20),
-      selectable: true,
-      onTapComponent: (selected) {
-        _addFollowerWidgetExample(selected);
-      },
-    ));
-    await add(InterfaceComponent(
-      spriteUnselected: Sprite.load('blue_button1.png'),
-      spriteSelected: Sprite.load('blue_button2.png'),
-      size: Vector2(40, 40),
-      id: 5,
-      position: Vector2(300, 20),
       selectable: false,
       onTapComponent: (selected) {
         _animateColorFilter();
       },
     ));
     await add(TextInterfaceComponent(
-      text: '开始场景',
+      text: '鸿燕行动',
       textConfig: const TextStyle(
         color: Colors.white,
       ),

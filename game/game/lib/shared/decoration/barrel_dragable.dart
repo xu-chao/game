@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class BarrelDraggable extends GameDecoration
     with DragGesture, ObjectCollision, Movement, Pushable {
   late TextPaint _textConfig;
-  String text = '拖动到此处';
+  String text = 'Boom!';
   double xCenter = 0;
   double yCenter = 0;
 
